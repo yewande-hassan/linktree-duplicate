@@ -5,11 +5,18 @@ font-family: 'Inter', sans-serif;
 position: relative;
 }
 #profile_img{
-  margin-top: 5em;
+  margin-top: 3em;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
 }
 #Avatarsharebutton{
   position: absolute;
-  top:40px;
+  top:30px;
   right: 20px;
 }
 
@@ -26,8 +33,8 @@ position: relative;
 }
 .btn{
 font-family: 'Inter', sans-serif;
-width:90%;
-height: 8vh;
+width:80%;
+height: 10vh;
 margin: 1em 1em 0 1em;
 padding: 1em;
 background-color: rgba(16, 24, 40, 0.05);
@@ -38,23 +45,48 @@ font-weight: 500;
 box-shadow: 2px;
 }
 .btn:hover{
-  background-color: rgb(184, 180, 180);
+  background-color: #D0D5DD;
+}
+.socials{
+  margin-top: 2em;
+}
+#slack{
+  margin-right: 1em;
+}
+.footer{
+  width:78%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 2em 0 8em;
+  padding: 1em;
+  border-top: 1px solid #667085;
+}
+.footerText{
+  color: #667085;
+  font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   #AvatarsharebuttonWeb{
     display: none;
    }
+   .footer{
+    display: none;
+   }
+   .socials{
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   #profile_img{
-    margin-top: 3em;
+    margin-top: 2em;
   }
   #Avatarsharebutton{
    display: none;
   }
   #AvatarsharebuttonWeb{
     position: absolute;
-    top:40px;
+    top:30px;
     right: 20px;
+
    }
 }
