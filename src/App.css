@@ -1,38 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 .App {
-  text-align: center;
+text-align: center;
+font-family: 'Inter', sans-serif;
+position: relative;
+}
+#profile_img{
+  margin-top: 5em;
+}
+#Avatarsharebutton{
+  position: absolute;
+  top:40px;
+  right: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.name{
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn{
+font-family: 'Inter', sans-serif;
+width:90%;
+height: 8vh;
+margin: 1em 1em 0 1em;
+padding: 1em;
+background-color: rgba(16, 24, 40, 0.05);
+border: none;
+border-radius: 10px;
+font-size: 14px;
+font-weight: 500;
+box-shadow: 2px;
+}
+.btn:hover{
+  background-color: rgb(184, 180, 180);
+}
+@media screen and (max-width: 768px) {
+  #AvatarsharebuttonWeb{
+    display: none;
+   }
+}
+@media screen and (min-width: 768px) {
+  #profile_img{
+    margin-top: 3em;
   }
-  to {
-    transform: rotate(360deg);
+  #Avatarsharebutton{
+   display: none;
   }
+  #AvatarsharebuttonWeb{
+    position: absolute;
+    top:40px;
+    right: 20px;
+   }
 }
