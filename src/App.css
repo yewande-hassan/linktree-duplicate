@@ -54,10 +54,9 @@ box-shadow: 2px;
   margin-right: 1em;
 }
 .footer{
-  width:78%;
   display: flex;
   justify-content: space-between;
-  margin: 1em 2em 0 8em;
+  margin: 6em 8em;
   padding: 1em;
   border-top: 1px solid #667085;
 }
@@ -70,10 +69,19 @@ box-shadow: 2px;
     display: none;
    }
    .footer{
-    display: none;
+   margin: 6em 3em 2em 3em;
+   text-align:start;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
    }
+  #logo,
+  #I4G{
+    max-width: 40%;
+    margin: 1em 0;
+  }
    .socials{
-    display: none;
+   margin-top: 3em;
   }
 }
 @media screen and (min-width: 768px) {
