@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 6em 0;
+    padding: 1em;
+    border-top: 1px solid #667085;
+  }
+  .footerText{
+    color: #667085;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 768px) {
+     .footer{
+     margin: 6em 3em 2em 3em;
+     text-align:start;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     }
+    #logo,
+    #I4G{
+      max-width: 40%;
+      margin: 1em 0;
+    }
+  }

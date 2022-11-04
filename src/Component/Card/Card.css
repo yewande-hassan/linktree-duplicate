@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+#profile_img{
+    margin-top: 3em;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+  }
+  #Avatarsharebutton{
+    position: absolute;
+    top:30px;
+    right: 20px;
+  } 
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+    font-weight: 700;
+  }
+  .btn{
+  font-family: 'Inter', sans-serif;
+  width:80%;
+  height: 10vh;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  background-color: rgba(16, 24, 40, 0.05);
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 2px;
+  }
+  .btn:hover{
+    background-color: #D0D5DD;
+  }
+  .socials{
+    margin-top: 2em;
+  }
+  #slack{
+    margin-right: 1em;
+  }
+  @media screen and (max-width: 768px) {
+    #AvatarsharebuttonWeb{
+      display: none;
+     }
+
+     .socials{
+     margin-top: 3em;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    #profile_img{
+      margin-top: 2em;
+    }
+    #Avatarsharebutton{
+     display: none;
+    }
+    #AvatarsharebuttonWeb{
+      position: absolute;
+      top:30px;
+      right: 20px;
+  
+     }
+  }

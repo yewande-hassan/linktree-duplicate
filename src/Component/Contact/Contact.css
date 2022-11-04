@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.container{
+  text-align: left;
+  margin: 30px 0;
+  font-family: 'Inter', sans-serif; 
+}
+.heading{
+    font-size: 36px;
+    font-weight: 600;
+}
+.paragraph{
+    color: #475467;
+    margin-bottom: 50px;
+}
+#usrform{
+    display: flex;
+    flex-direction: column;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #475467;
+}
+#first_name,
+#last_name,
+#email,
+#message{
+    margin: 10px 5px 10px 0;
+    border: 1px solid #475467;
+    border-radius: 5px;
+    width:100%;
+    padding-left: 5px;
+    font-size: 14px;
+}
+#btn__submit{
+    margin: 10px 5px 10px 0;
+    background-color: rgb(78, 135, 250);
+    width:100%;
+    padding: 5px 0;
+    color: white;
+}
+#label_email{
+    display: flex;
+    flex-direction: column;
+    color: #475467;  
+}
+.text,
+.checked{
+    color: #475467;
+    font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+    .container{
+        width:50%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .names{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #475467;
+    }
+    }
